@@ -1,0 +1,25 @@
+{
+  "name": "web-scrapper",
+  "version": "1.0.0",
+  "description": "a serverless app to scrape og metadata from webpages",
+  "main": "handler.js",
+  "scripts": {
+    "start": "nodemon --exec \"serverless offline start\"",
+    "test": "jest",
+    "debug": "SET SLS_DEBUG=* && node --inspect C:\\\\Users\\serverless\bin\\serverless offline -s dev"
+  },
+  "author": "prakash arumugam",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
+    "serverless-offline": "^9.1.6"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1189.0",
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
+    "serverless-api-gateway-caching": "^1.8.1",
+    "uuid": "^8.3.2"
+  }
+}
